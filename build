@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+    
+mkdir -p ShortcutEditor.app
+cd ShortcutEditor.app
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local/bin -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ ..
+
+# or use cmake-tools
+cmake --build .
